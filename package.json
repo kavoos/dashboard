@@ -2,6 +2,13 @@
   "name": "dashboard",
   "version": "1.0.0",
   "description": "",
+  "author": "Kavoos Boloorchi <kavoos.boloorchi@gmail.com>",
+  "license": "ISC",
+  "keywords": [
+    "react",
+    "typescript",
+    "webpack"
+  ],
   "main": "webpack.config.babel.js",
   "scripts": {
     "build": "webpack --config webpack.config.babel.js",
@@ -14,9 +21,10 @@
       "post-commit": "git update-index --again"
     }
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kavoos/dashboard.git"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
