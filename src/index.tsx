@@ -1,5 +1,6 @@
-// import '@styles/styles.less'
-// import '@styles/styles.scss'
+import '@styles/styles.less'
+import '@styles/styles.scss'
+import '@styles/styles.css'
 
 import React, { FC } from 'react'
 import ReactDom from 'react-dom'
