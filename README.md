@@ -1,4 +1,4 @@
-# Dashboard
+# React, Webpack, TypeScript, Tailwind CSS
 
 ## Quick start
 
