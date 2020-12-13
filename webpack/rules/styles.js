@@ -11,9 +11,29 @@ import {
   sassLoaderItems
 } from './useLoaderRuleItems'
 
+// export const cssRule = {
+//   test: /\.css$/,
+//   use: [miniCssExtractLoader, postCssLoader, resolveUrlLoader, cssLoader]
+// }
+
 export const cssRule = {
   test: /\.css$/,
-  use: [miniCssExtractLoader, postCssLoader, resolveUrlLoader, cssLoader]
+  use: [
+    'style-loader',
+    // {
+    //   loader: MiniCssExtractPlugin.loader,
+    //   options: {
+    //     hmr: argv.mode === 'development'
+    //   }
+    // },
+    {
+      loader: 'css-loader',
+      options: {
+        importLoaders: 1
+      }
+    },
+    'postcss-loader'
+  ]
 }
 
 export const lessModulesRule = {
