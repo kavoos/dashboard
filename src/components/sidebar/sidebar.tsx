@@ -5,7 +5,7 @@ export const Sidebar: FC = () => {
 
   return (
     <div
-      className={`relative transition-all duration-500 ease-in-out shadow h-screen bg-gray-600 ${isOpen ? 'w-80' : 'w-16 '}`}
+      className={`relative transition-all duration-500 ease-in-out shadow h-screen bg-blue-gray-900 ${isOpen ? 'w-80' : 'w-16 '}`}
     >
       <button
         className={`w-6 absolute bottom-4 left-4 fill-current text-white focus:outline-none`}
