@@ -12,7 +12,7 @@ export const Sidebar: FC = () => {
         className={`w-4 h-4 absolute bottom-6 left-6 fill-current text-white focus:outline-none`}
         onClick={() => setIsOpen(!isOpen)}
         >
-        <ExpandButton className={`w-4 h-4 transform duration-1000 ease-in-out ${isOpen ? 'rotate-180' : 'rotate-0 '}`} />
+        <ExpandButton className={`w-4 h-4 transform duration-500 ease-in-out ${isOpen ? 'rotate-180' : 'rotate-0 '}`} />
       </button>
     </div>
   )
