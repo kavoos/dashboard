@@ -2,25 +2,25 @@ import React, { FC, useState } from 'react'
 import { ExpandButton } from '../button/expand-button'
 import { SettingsButton } from '../button/settings-button'
 
+import UserCircleIcon from '@images/user-circle.svg'
+
 export const Sidebar: FC = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [expanded, setExpanded] = useState(false)
 
   return (
     <div
-      className={`relative transition-all duration-500 ease-in-out shadow h-screen bg-blue-gray-900 ${isOpen ? 'w-80' : 'w-18 '}`}
+      className={`relative transition-all duration-500 ease-in-out shadow h-screen bg-blue-gray-900 ${expanded ? 'w-80' : 'w-18 '}`}
     >
-    <button
-      className="w-4 h-4 absolute bottom-16 left-6 fill-current text-white focus:outline-none"
-      onClick={() => setIsOpen(!isOpen)}
-      >
-      <SettingsButton className="w-4 h-4" />
-    </button>
-      <button
-        className="w-4 h-4 absolute bottom-6 left-6 fill-current text-white focus:outline-none"
-        onClick={() => setIsOpen(!isOpen)}
-        >
-        <ExpandButton className={`w-4 h-4 transform duration-500 ease-in-out ${isOpen ? 'rotate-180' : 'rotate-0 '}`} />
-      </button>
+      <div className="absolute top-4 left-1.5 text-white">
+        <UserCircleIcon className="w-14 h-14" />
+      </div>
+      <SettingsButton
+        onClick={() => setExpanded(!expanded)}
+      />
+      <ExpandButton
+        expanded={expanded}
+        onClick={() => setExpanded(!expanded)}
+      />
     </div>
   )
 }
