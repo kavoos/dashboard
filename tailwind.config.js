@@ -20,6 +20,9 @@ module.exports = {
           '900': '#263238'
         }
       },
+      fontFamily: {
+        'sans': ['Montserrat', 'Sans-serif']
+      },
       width: {
         '18': '4.5rem'
       }

@@ -9,7 +9,7 @@ export const Sidebar: FC = () => {
 
   return (
     <div
-      className={`flex flex-col py-6  pl-1.5 transition-all duration-500 ease-in-out shadow h-screen bg-blue-gray-900 ${expanded ? 'w-80' : 'w-18 '}`}
+      className={`flex flex-col py-6  pl-1.5 transition-all duration-500 ease-in-out shadow h-screen bg-blue-gray-900 ${expanded ? 'w-64' : 'w-18 '}`}
     >
       <Avatar expanded={expanded} />
       <Spacer />
