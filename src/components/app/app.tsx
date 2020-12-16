@@ -1,8 +1,10 @@
 import React, { FC } from 'react'
 import { Sidebar } from '../sidebar/sidebar'
 
+import '@styles/components/app.css'
+
 export const App: FC = (): React.ReactElement => (
-  <div className="w-screen h-screen bg-blue-gray-50">
+  <div className="app">
     <Sidebar />
   </div>
 )

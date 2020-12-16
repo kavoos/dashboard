@@ -1,0 +1,5 @@
+@layer components {
+  .app {
+    @apply w-screen h-screen bg-blue-gray-50;
+  }
+}
