@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 
 import HeartIcon from '@images/heart.svg'
-import { Button } from './button-container'
+import { Button } from './button'
 
 import '@styles/components/button.css'
 
