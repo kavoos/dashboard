@@ -6,7 +6,7 @@ import { Button } from './button'
 import '@styles/components/button.css'
 
 interface Props {
-  expanded?: boolean
+  expanded: boolean
   onClick(): void
 }
 

@@ -21,8 +21,11 @@ module.exports = {
         }
       },
       fontFamily: {
-        'sans': ['Montserrat', 'Sans-serif']
+        'sans': ['Titillium-Web', 'Sans-serif']
       },
+      transitionProperty: {
+        'box': 'width, height'
+       },
       width: {
         '18': '4.5rem'
       }

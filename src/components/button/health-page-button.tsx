@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 
-import SettingIcon from '@images/cog.svg'
+import HeartIcon from '@images/heart.svg'
 import { Button } from './button'
 
 import '@styles/components/button.css'
@@ -10,16 +10,16 @@ interface Props {
   onClick(): void
 }
 
-export const SettingsButton: FC<Props> = (props: Props) => {
+export const HealthPageButton: FC<Props> = (props: Props) => {
   const { expanded, onClick } = props
   return (
       <Button
         className="button"
         expanded={expanded}
         onClick={onClick}
-        title="Settings"
+        title="Health"
         icon={
-          <SettingIcon
+          <HeartIcon
             className="button-icon"
           />
         }
