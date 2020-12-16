@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 
 import ChevronDoubleRightIcon from '@images/chevron-double-right.svg'
-import { Button } from './button'
+import { Button } from './button-container'
 
 import '@styles/components/button.css'
 
