@@ -1,9 +1,14 @@
 # React, Webpack, TypeScript, Tailwind CSS
 
+-   React v17.0.1
+-   Webpack v5.10.0
+-   TypeScript v4.1.2
+-   Tailwind Css v2.0.2
+
 ## Quick start
 
-- npm v6.14.8
-- node v14.15.1
+-   npm v6.14.8
+-   node v14.15.1
 
 To run this locally:
 
