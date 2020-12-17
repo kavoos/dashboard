@@ -7,10 +7,18 @@ import { HealthPageButton } from '../button/health-page-button'
 import { FinancePageButton } from '../button/finance-page-button'
 import { Spacer } from '../spacer/spacer'
 
+import { useHistory } from "react-router-dom"
+
 import '@styles/components/sidebar.css'
 
 export const Sidebar: FC = () => {
   const [expanded, setExpanded] = useState(false)
+
+  const history = useHistory()
+
+  const navigate = (to: string) => {
+    history.push(to)
+  }
 
   return (
     <div
@@ -19,20 +27,20 @@ export const Sidebar: FC = () => {
       <Avatar expanded={expanded} />
       <HealthPageButton
         expanded={expanded}
-        onClick={() => setExpanded(!expanded)}
+        onClick={() => navigate('health')}
       />
       <FinancePageButton
         expanded={expanded}
-        onClick={() => setExpanded(!expanded)}
+        onClick={() => navigate('finance')}
       />
       <Spacer />
       <SupportButton
         expanded={expanded}
-        onClick={() => setExpanded(!expanded)}
+        onClick={() => navigate('support')}
       />
       <SettingsButton
         expanded={expanded}
-        onClick={() => setExpanded(!expanded)}
+        onClick={() => navigate('settings')}
       />
       <ExpandButton
         expanded={expanded}

@@ -1,0 +1,5 @@
+@layer components {
+  .pages {
+    @apply flex-1 px-8 py-10;
+  }
+}

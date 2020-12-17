@@ -13,16 +13,16 @@ interface Props {
 export const FinancePageButton: FC<Props> = (props: Props) => {
   const { expanded, onClick } = props
   return (
-      <Button
-        className="button"
-        expanded={expanded}
-        onClick={onClick}
-        title="Finance"
-        icon={
-          <EuroIcon
-            className="button-icon"
-          />
-        }
-      />
+    <Button
+      className="button"
+      expanded={expanded}
+      onClick={onClick}
+      title="Finance"
+      icon={
+        <EuroIcon
+          className="button-icon"
+        />
+      }
+    />
   )
 }

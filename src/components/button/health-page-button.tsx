@@ -13,16 +13,16 @@ interface Props {
 export const HealthPageButton: FC<Props> = (props: Props) => {
   const { expanded, onClick } = props
   return (
-      <Button
-        className="button"
-        expanded={expanded}
-        onClick={onClick}
-        title="Health"
-        icon={
-          <HeartIcon
-            className="button-icon"
-          />
-        }
-      />
+    <Button
+      className="button"
+      expanded={expanded}
+      onClick={onClick}
+      title="Health"
+      icon={
+        <HeartIcon
+          className="button-icon"
+        />
+      }
+    />
   )
 }
