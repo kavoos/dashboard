@@ -7,7 +7,7 @@ import { HealthPageButton } from '../button/health-page-button'
 import { FinancePageButton } from '../button/finance-page-button'
 import { Spacer } from '../spacer/spacer'
 
-import { useHistory } from "react-router-dom"
+import { useHistory, useLocation } from "react-router-dom"
 
 import '@styles/components/sidebar.css'
 
@@ -15,32 +15,33 @@ export const Sidebar: FC = () => {
   const [expanded, setExpanded] = useState(false)
 
   const history = useHistory()
+  const location = useLocation()
 
   const navigate = (to: string) => {
-    history.push(to)
+    if (to !== location.pathname) history.push(to)
   }
 
   return (
     <div
-      className={`sidebar ${expanded ? 'w-64' : 'w-18 '}`}
+      className={`sidebar ${expanded ? 'w-56' : 'w-18 '}`}
     >
       <Avatar expanded={expanded} />
       <HealthPageButton
         expanded={expanded}
-        onClick={() => navigate('health')}
+        onClick={() => navigate('/health')}
       />
       <FinancePageButton
         expanded={expanded}
-        onClick={() => navigate('finance')}
+        onClick={() => navigate('/finance')}
       />
       <Spacer />
       <SupportButton
         expanded={expanded}
-        onClick={() => navigate('support')}
+        onClick={() => navigate('/support')}
       />
       <SettingsButton
         expanded={expanded}
-        onClick={() => navigate('settings')}
+        onClick={() => navigate('/settings')}
       />
       <ExpandButton
         expanded={expanded}

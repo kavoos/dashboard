@@ -4,6 +4,8 @@ import '@styles/pages/pages.css'
 
 export const SettingsPage: FC = () => {
   return (
-    <div className="pages">Settings Page</div>
+    <div className="page">
+      <div className="page-title">Settings Page</div>
+    </div>
   )
 }

@@ -4,6 +4,8 @@ import '@styles/pages/pages.css'
 
 export const FinancePage: FC = () => {
   return (
-    <div className="pages">Finance Page</div>
+    <div className="page">
+      <div className="page-title">Finance Page</div>
+    </div>
   )
 }

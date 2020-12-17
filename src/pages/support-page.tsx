@@ -4,6 +4,8 @@ import '@styles/pages/pages.css'
 
 export const SupportPage: FC = () => {
   return (
-    <div className="pages">Support Page</div>
+    <div className="page">
+      <div className="page-title">Support Page</div>
+    </div>
   )
 }

@@ -4,6 +4,8 @@ import '@styles/pages/pages.css'
 
 export const NoMatchPage: FC = () => {
   return (
-    <div className="pages">Page not found!</div>
+    <div className="page">
+      <div className="page-title">Page not found!</div>
+    </div>
   )
 }
