@@ -2,6 +2,7 @@ import React, { FC, useState } from 'react'
 import { Avatar } from '../avatar/avatar'
 import { ExpandButton } from '../button/expand-button'
 import { SettingsButton } from '../button/settings-button'
+import { SupportButton } from '../button/support-button'
 import { HealthPageButton } from '../button/health-page-button'
 import { FinancePageButton } from '../button/finance-page-button'
 import { Spacer } from '../spacer/spacer'
@@ -25,6 +26,10 @@ export const Sidebar: FC = () => {
         onClick={() => setExpanded(!expanded)}
       />
       <Spacer />
+      <SupportButton
+        expanded={expanded}
+        onClick={() => setExpanded(!expanded)}
+      />
       <SettingsButton
         expanded={expanded}
         onClick={() => setExpanded(!expanded)}

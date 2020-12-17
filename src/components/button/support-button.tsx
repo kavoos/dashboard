@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 
-import EuroIcon from '@images/currency-euro.svg'
+import SupportIcon from '@images/support.svg'
 import { Button } from './button'
 
 import '@styles/components/button.css'
@@ -10,16 +10,16 @@ interface Props {
   onClick(): void
 }
 
-export const FinancePageButton: FC<Props> = (props: Props) => {
+export const SupportButton: FC<Props> = (props: Props) => {
   const { expanded, onClick } = props
   return (
       <Button
         className="button"
         expanded={expanded}
         onClick={onClick}
-        title="Finance"
+        title="Support"
         icon={
-          <EuroIcon
+          <SupportIcon
             className="button-icon"
           />
         }
