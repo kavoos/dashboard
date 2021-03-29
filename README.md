@@ -16,3 +16,6 @@ To run this locally:
 2. Install all dependencies using `npm install`
 3. Start the development server using `npm run start`
 4. Open up [http://localhost:8080](http://localhost:8080)
+
+## COVID-19
+https://epistat.wiv-isp.be/covid/
