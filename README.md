@@ -1,4 +1,4 @@
-# React, Webpack, TypeScript, Tailwind CSS
+# Dashboard
 
 -   React v17.0.1
 -   Webpack v5.10.0
