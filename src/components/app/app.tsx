@@ -1,17 +1,15 @@
-/**
- * Created by: Andrey Polyakov (andrey@polyakov.im)
- */
-import React, {Suspense, lazy} from 'react';
+import React, { FC } from 'react'
+import { Sidebar } from '../sidebar/sidebar'
+import { AppRouter } from '@src/pages/app-router'
+import { BrowserRouter } from 'react-router-dom'
 
-import {stylesContainer} from './app.module.less';
-import {stylesHeader, stylesImage} from './app.module.scss';
+import '@styles/components/app.css'
 
-const LazyStrawberryIcon = lazy(() => import('./strawberry'));
-export const App = (): React.ReactElement => (
-    <div className={stylesContainer}>
-        <div className={stylesHeader}>It works</div>
-        <Suspense fallback={'loading...'}>
-            <LazyStrawberryIcon className={stylesImage} />
-        </Suspense>
+export const App: FC = (): React.ReactElement => (
+  <BrowserRouter>
+    <div className="app">
+      <Sidebar />
+      <AppRouter />
     </div>
-);
+  </BrowserRouter>
+)

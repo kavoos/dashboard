@@ -13,7 +13,12 @@ import {
 
 export const cssRule = {
   test: /\.css$/,
-  use: [miniCssExtractLoader, postCssLoader, resolveUrlLoader, cssLoader]
+  use: [
+    miniCssExtractLoader,
+    cssLoader,
+    postCssLoader,
+    resolveUrlLoader
+  ]
 }
 
 export const lessModulesRule = {
